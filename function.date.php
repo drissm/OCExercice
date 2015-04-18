@@ -26,14 +26,14 @@ function getMonth($valeur) {
 function getYear($valeur) {
 	return substr($valeur, 0, 4);
 }
-// Transforme le numéro du mois en texte
+// Renvoie le nom du mois
 function monthNumToName($mois) {
 	$tableau = Array("", "Janvier", "F&eacute;vrier", "Mars", "Avril",
 		"Mai", "Juin", "Juillet", "A&ocirc;ut", "Septembre", "Octobre",
 		"Novembre", "D&eacute;cembre");
 	return (intval($mois) > 0 && intval($mois) < 13) ? $tableau[intval($mois)] : "Ind&eacute;fini";
 }
-// Transforme le numéro du jour en texte
+// Renvoie le nom du jour
 function dayToName($day) {
     $tableau = Array("", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche");
     return (intval($day) > 0 && intval($day) < 8) ? $tableau[intval($day)] : "Ind&eacute;fini";
